@@ -1,0 +1,64 @@
+.section-team {
+  background-color: var(--second-button-bg-color);
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
+}
+
+.teamate-info {
+  background-color: var(--primary-white-color);
+  padding: 30px 0;
+  border-radius: 0px 0px 4px 4px;
+}
+.teamate-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  @include font(16px, 1.19);
+  margin-bottom: 10px;
+  text-align: center;
+}
+.teamate-text {
+  @include font(16px, 1.19);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-shadow {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.icon-social {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--social-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--icon-white-color);
+  }
+}
+
+.icon-social-item {
+  fill: currentColor;
+}
+
+.icon-contact-list {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}

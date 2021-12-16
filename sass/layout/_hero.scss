@@ -1,0 +1,26 @@
+.hero {
+  background-color: var(--second-bg-color);
+  text-align: center;
+  padding: 200px 0;
+}
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  @include font(44px, 1.36);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* Overlay */
+.hero-overlay {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
