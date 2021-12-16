@@ -38,14 +38,14 @@
   }
 }
 
-.button-item {
+.button__item {
   margin-left: 0px;
   &:not(:first-child) {
     margin-left: 8px;
   }
 }
 
-.primary-button-flex {
+.primary-button--flex {
   @extend %align-list;
   // display: flex;
   // align-items: center;
