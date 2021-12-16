@@ -6,20 +6,13 @@
   display: flex;
 }
 
-.main-item {
-  margin-left: 0px;
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
-}
-
-.quality-title {
+.quality__title {
   color: var(--title-text-color);
   @include font(14px, 1.14);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.quality-text {
+.quality__text {
   @include font(14px, 1.71);
 }
 
@@ -32,6 +25,6 @@
   border-radius: 4px;
 }
 
-.icon {
+.icon-quality__item {
   display: block;
 }

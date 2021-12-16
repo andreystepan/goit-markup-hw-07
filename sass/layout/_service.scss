@@ -12,8 +12,7 @@
 
 .service-overlay {
   position: absolute;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   left: 0px;
   bottom: 0px;
@@ -23,7 +22,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.service-overlay-text {
+.service-overlay__text {
   font-weight: 700;
   @include font(14px, 1.14);
   text-transform: uppercase;

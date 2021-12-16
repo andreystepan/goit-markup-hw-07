@@ -46,8 +46,9 @@
 }
 
 .primary-button-flex {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
+  // display: flex;
+  // align-items: center;
 }
 
 .icon-footer-button {
