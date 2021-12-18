@@ -1,62 +1,60 @@
 .section-team {
-  background-color: var(--second-button-bg-color);
-  padding-top: 47px;
-  padding-bottom: 94px;
+  background-color: $primary-shade-color;
 }
 .team-list {
   display: flex;
 }
 
-.teamate__info {
-  background-color: var(--primary-white-color);
-  padding: 30px 0;
+.team-list__teamate {
+  background-color: $primary-color;
+  padding: 30px 32px;
   border-radius: 0px 0px 4px 4px;
 }
-.teamate__name {
-  color: var(--title-text-color);
+.team-list__teamate-name {
+  color: $secondary-shade-color;
   font-weight: 500;
   @include font(16px, 1.19);
   margin-bottom: 10px;
   text-align: center;
 }
-.teamate__text {
+.team-list__teamate-text {
   @include font(16px, 1.19);
   text-align: center;
   margin-bottom: 16px;
 }
 
-.team-list__team--shadow {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+.team-list__team-shadow {
+  box-shadow: 0px 1px 3px rgba($secondary-color, 0.12),
+    0px 1px 1px rgba($secondary-color, 0.14),
+    0px 2px 1px rgba($secondary-color, 0.2);
 }
 
-.icon-social {
+.social-list {
   display: flex;
-  justify-content: center;
 }
 
-.icon-social__link {
+.social-list__link {
   @extend %align-list;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--social-color);
+  color: $secondary-shade4-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
-    color: var(--icon-white-color);
+    background-color: $accent-color;
+    color: $primary-color;
   }
 }
 
-.icon-social__item {
+.social-list__icon {
   fill: currentColor;
 }
 
-.icon-social__list {
+.social-list__item {
   &:not(:first-child) {
     margin-left: 10px;
   }

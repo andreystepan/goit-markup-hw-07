@@ -1,101 +1,105 @@
 .footer {
-  background-color: var(--second-bg-color);
+  background-color: $secondary-shade2-color;
   padding: 60px 0;
 }
 
-.footer-list {
-  display: flex;
+.footer__container {
+  @extend %align-list;
 }
-.address {
+.logo__studio--secondary {
+  color: $primary-color;
+}
+
+.footer-address {
   font-style: normal;
   margin-top: 20px;
 }
 
-.footer-item__map-link {
+.footer-list__map-link {
   display: inline-block;
-  color: var(--primary-white-color);
+  color: $primary-color;
   text-decoration: none;
   @include font(14px, 1.71);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
-.footer-item__link {
+.footer-list__link {
   display: inline-block;
-  color: var(--footer-text-color);
+  color: rgba($primary-color, 0.6);
   text-decoration: none;
   @include font(14px, 1.71);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
-.footer-item {
+.footer-list__item {
   margin-bottom: 0;
   &:not(:last-child) {
     margin-bottom: 9px;
   }
 }
 
-.footer-social {
+.footer__social {
   margin-left: 70px;
 }
 .footer__title {
   @include font(14px, 1.14);
-  color: var(--primary-white-color);
+  color: $primary-color;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.icon-footer {
+.footer-social-list {
   display: flex;
 }
 
-.icon-footer__link {
+.footer-social-list__link {
   @extend %align-list;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--icon-white-color);
-  background-color: rgba(255, 255, 255, 0.1);
+  color: $primary-color;
+  background-color: rgba($primary-color, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
   }
 }
 
-.icon-footer__item {
+.footer-social-list__icon {
   fill: currentColor;
 }
 
-.icon-footer__list {
+.footer-social-list__item {
   &:not(:first-child) {
     margin-left: 10px;
   }
 }
 
-.footer-form {
+.subskribe__form {
   display: flex;
 }
 
-.footer-form-list {
+.footer-subscribe {
   margin-left: auto;
 }
-.footer-input {
+.subskribe__input {
   width: 358px;
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba($primary-color, 0.3);
   border-radius: 4px;
-  background-color: var(--second-bg-color);
+  background-color: $secondary-shade2-color;
   outline: none;
-  color: var(--icon-white-color);
+  color: $primary-color;
 }

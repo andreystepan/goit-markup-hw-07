@@ -1,5 +1,5 @@
-.section__title {
-  color: var(--title-text-color);
+.section-title {
+  color: $secondary-shade-color;
   @include font(36px, 1.17);
   margin-bottom: 50px;
   text-align: center;
