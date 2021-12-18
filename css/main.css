@@ -557,7 +557,7 @@ img {
   color: #ffffff;
 }
 
-.portfolio-list__title {
+.portfolio-list__name {
   margin-bottom: 4px;
   color: #212121;
   font-size: 18px;
@@ -565,7 +565,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.portfolio-list__text {
+.portfolio-list__description {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
