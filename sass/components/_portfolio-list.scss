@@ -1,15 +1,3 @@
-.filter-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.filter-list__item {
-  margin-left: 0px;
-  &:not(:first-child) {
-    margin-left: 8px;
-  }
-}
 .portfolio-list__type {
   padding: 20px 24px;
   border: 1px solid $primary-shade3-color;

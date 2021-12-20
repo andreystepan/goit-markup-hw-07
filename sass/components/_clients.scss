@@ -17,10 +17,8 @@
     color: $accent-color;
   }
 }
-.clients__list {
-  &:not(:first-child) {
-    margin-left: 30px;
-  }
+.clients__item {
+  @extend %ml-30;
 }
 .clients__icon {
   fill: currentColor;

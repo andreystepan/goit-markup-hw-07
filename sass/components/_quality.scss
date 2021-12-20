@@ -4,14 +4,16 @@
 .quality-list {
   display: flex;
 }
-
-.quality__title {
+.quality-list__item {
+  @extend %ml-30;
+}
+.quality-list__title {
   color: $secondary-shade-color;
   @include font(14px, 1.14);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.quality__text {
+.quality-list__text {
   @include font(14px, 1.71);
 }
 

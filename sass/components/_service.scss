@@ -5,6 +5,9 @@
   display: flex;
 }
 
+.service-list__item {
+  @extend %ml-30;
+}
 .service-list__img-wrapper {
   position: relative;
 }

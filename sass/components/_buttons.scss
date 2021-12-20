@@ -16,6 +16,15 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.primary-button--flex {
+  @extend %align-list;
+}
+
+.primary-button__icon {
+  fill: currentColor;
+  margin-left: 10px;
+}
+
 .secondary-button {
   padding: 6px 22px;
   background-color: $primary-shade-color;
@@ -38,13 +47,25 @@
   }
 }
 
-.primary-button--flex {
+.close__button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba($secondary-color, 0.1);
+  border-radius: 50%;
+  background-color: $primary-color;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
   @extend %align-list;
-  // display: flex;
-  // align-items: center;
+  justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
-.subskribe__icon {
+.close-button__icon {
   fill: currentColor;
-  margin-left: 10px;
 }
