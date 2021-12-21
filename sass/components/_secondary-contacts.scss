@@ -1,4 +1,10 @@
-.secondary-contact__map-link {
+.secondary-contact-list__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.secondary-contact-list__map-link {
   display: inline-block;
   color: $primary-color;
   text-decoration: none;
@@ -10,7 +16,7 @@
   }
 }
 
-.secondary-contact__link {
+.secondary-contact-list__link {
   display: inline-block;
   color: rgba($primary-color, 0.6);
   text-decoration: none;
@@ -19,11 +25,5 @@
   &:hover,
   &:focus {
     color: $accent-color;
-  }
-}
-
-.secondary-contact__item {
-  &:not(:last-child) {
-    margin-bottom: 9px;
   }
 }
